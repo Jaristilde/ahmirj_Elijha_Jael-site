@@ -18,20 +18,13 @@
     } catch { return null; }
   }
   const hasText = value => typeof value === 'string' && value.trim().length > 0;
-  let activeWorkshops = 0;
-  for (const key of ['app', 'marketing']) {
-    const offer = config.workshops?.[key];
-    const url = offer && publicUrl(offer.url, 'eventbrite.com');
-    if (!url || !['details', 'price', 'format'].every(field => hasText(offer[field]))) continue;
-    const link = document.querySelector(`[data-booking="${key}"]`);
-    link.href = url;
-    link.textContent = 'Save my seat on Eventbrite';
-    document.querySelector(`[data-details="${key}"]`).textContent = offer.details;
-    document.querySelector(`[data-price="${key}"]`).textContent = offer.price;
-    document.querySelector(`[data-format="${key}"]`).textContent = offer.format;
-    activeWorkshops += 1;
+  const workshopUrl = publicUrl(config.websiteWorkshopUrl, 'eventbrite.com');
+  if (workshopUrl) {
+    const link = document.querySelector('[data-booking="website"]');
+    link.href = workshopUrl;
+    link.hidden = false;
+    document.querySelector('[data-details="website"]').textContent = 'Register on Eventbrite. Check the listing for ticket fees and refund terms before paying.';
   }
-  if (activeWorkshops) document.querySelector('#workshops .section-intro').textContent = 'Choose a practical skill and build alongside me. See the confirmed event details below, or get updates about future workshops.';
   const discoveryUrl = config.discovery && publicUrl(config.discovery.url, 'calendly.com');
   if (discoveryUrl) {
     document.querySelectorAll('[data-booking="discovery"]').forEach(link => {
