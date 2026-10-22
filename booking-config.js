@@ -5,7 +5,7 @@ window.AJ_BOOKING = {
     app: null,
     marketing: null
     // Example structure, using the actual event listing's details:
-    // app: { url: 'PUBLIC_EVENTBRITE_EVENT_URL', details: 'Confirmed date, start–end time, timezone, fees and refund terms', price: '$100', format: '4 hours · 8 seats · Live on Zoom' }
+    // app: { url: 'PUBLIC_EVENTBRITE_EVENT_URL', details: 'Confirmed date, start–end time, timezone, fees and refund terms', price: '$100', format: '4 hours · 8 seats · Live on Google Meet' }
   },
   discovery: null,
   // discovery: { url: 'PUBLIC_CALENDLY_EVENT_URL' }

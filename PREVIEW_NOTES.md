@@ -15,7 +15,7 @@ Local branch: `workshop-sales-preview`. No production deployment, external event
 
 - Shorter beginner-focused opening; featured app workshop appears immediately after it. Website-only teaching was not substituted for the current app curriculum.
 - Outcomes, instructor, and personal-help sections precede broader consulting.
-- $100 / four hours / eight seats / Zoom remain the existing advertised workshop terms, not externally verified facts. Event dates and final fees are explicitly pending.
+- $100 / four hours / eight seats / Google Meet remain the existing advertised workshop terms, not externally verified facts. Event dates and final fees are explicitly pending.
 - Personal-help section provides an email inquiry; proposed $149 / 90-minute terms are kept in an inert owner-review template until confirmed.
 - No invented booking dates, remaining-seat counts, testimonials, recordings, purchase conversions, public product links, or guarantees.
 - Numeric portfolio claims and conflicting founder details have been removed from visible copy pending evidence. Original content remains recoverable in Git history. Review: $1.2M savings, 10K+ interactions/day, 11 apps, eight vs ten years of experience, sub-100ms response, product store availability, and credentials. SITE_PLAN.md itself documents conflicting numbers; it is a draft, not external verification.
@@ -51,3 +51,5 @@ Serve this directory with a local static server, review desktop/mobile, and revi
 - Static checks passed: all original section anchors, existing contact/social links and Netlify form markup retained; one H1; no dead `#` purchase links.
 - Booking logic checks passed for valid event activation, incomplete config fallback, rejection of management/invalid destinations, paid/free event separation, preserving existing campaign values, and excluding arbitrary private query parameters.
 - Payment, provider confirmation emails, Google Calendar synchronization, and Netlify form processing remain unverified; no external submissions were made.
+
+Meeting platform confirmed by the owner: Google Meet, using the existing Google Workspace subscription. Website copy and configuration examples reflect Google Meet. No calendar or account settings were changed.

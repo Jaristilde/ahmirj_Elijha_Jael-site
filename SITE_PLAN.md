@@ -56,7 +56,7 @@ Common pattern [OPINION]: (1) a plain promise to one audience, (2) a photo of th
 
 ### Workshop
 **Build Your First App With AI — No Coding Required**
-Saturday, November 21, 2026 · 10am–2pm ET · Live on Zoom · 8 seats
+Saturday, November 21, 2026 · 10am–2pm ET · Live on Google Meet · 8 seats
 In four hours, together, you will:
 - Turn your idea into a clear, simple plan
 - Use AI to build the screens and features, step by step
