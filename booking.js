@@ -23,7 +23,7 @@
     const link = document.querySelector('[data-booking="website"]');
     link.href = workshopUrl;
     link.hidden = false;
-    document.querySelector('[data-details="website"]').textContent = 'Register on Eventbrite. Check the listing for ticket fees and refund terms before paying.';
+    document.querySelector('[data-details="website"]').textContent = 'The Black Friday offer includes a short feedback form and permission to quote your genuine feedback. See Eventbrite for the full terms, ticket fees, and refund policy.';
   }
   document.querySelectorAll('[data-inquiry]').forEach(link => {
     link.addEventListener('click', () => {
