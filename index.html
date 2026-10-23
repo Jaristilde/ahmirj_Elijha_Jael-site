@@ -1,640 +1,39 @@
 <!DOCTYPE html>
-
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Free Nov 5 Website Demo | Joane · Ahmir &amp; Jael</title>
-<meta content="Join Joane’s free live business website demo on Thu Nov 5, 2026, 6:00 to 6:30 PM ET, online on Google Meet. No coding experience needed." name="description"/>
+<title>Beginner AI Website Workshops | Joane · Ahmir &amp; Jael Co.</title>
+<meta content="Learn to build a simple business website with AI. Start with a free live demo, then join a hands-on workshop with Joane Aristilde on Google Meet." name="description"/>
 <!-- Open Graph (LinkedIn / WhatsApp / Facebook preview cards) -->
-<meta content="Free Nov 5 Website Demo | Joane · Ahmir &amp; Jael" property="og:title"/>
-<meta content="Join Joane’s free live business website demo on Thu Nov 5, 2026, 6:00 to 6:30 PM ET, online on Google Meet. No coding experience needed." property="og:description"/>
+<meta content="Beginner AI Website Workshops | Joane · Ahmir &amp; Jael Co." property="og:title"/>
+<meta content="Learn to build a simple business website with AI. Start with a free live demo, then join a hands-on workshop with Joane Aristilde on Google Meet." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://ahmirjael.netlify.app/joane-hero-brown.jpg" property="og:image"/>
-<meta content="https://ahmirjael.netlify.app" property="og:url"/>
+<meta content="https://ahmirjael.netlify.app/" property="og:url"/>
 <!-- Twitter card -->
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Free Nov 5 Website Demo | Joane · Ahmir &amp; Jael" name="twitter:title"/>
-<meta content="Join Joane’s free live business website demo on Thu Nov 5, 2026, 6:00 to 6:30 PM ET, online on Google Meet. No coding experience needed." name="twitter:description"/>
+<meta content="Beginner AI Website Workshops | Joane · Ahmir &amp; Jael Co." name="twitter:title"/>
+<meta content="Learn to build a simple business website with AI. Start with a free live demo, then join a hands-on workshop with Joane Aristilde on Google Meet." name="twitter:description"/>
 <meta content="https://ahmirjael.netlify.app/joane-hero-brown.jpg" name="twitter:image"/>
 <!-- Favicon (A&J wordmark) -->
 <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='54' font-weight='500' fill='%23d97757' text-anchor='middle'%3EA%26J%3C/text%3E%3C/svg%3E" rel="icon"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..600,0..100,0..1&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;text=J&amp;display=swap" rel="stylesheet"/>
-<style>
-  :root {
-    --bg: #faf8f5;
-    --ink: #1a1a2e;
-    --ink-soft: #4a4a5e;
-    --accent: #d97757;
-    --accent-hover: #c65e42;
-    --line: #e8e2d8;
-    --card: #ffffff;
-    --photo-bg: #3a3a42;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--bg);
-    color: var(--ink);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-  .container { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
 
-  nav {
-    position: sticky; top: 0; z-index: 100;
-    background: rgba(250, 248, 245, 0.85);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--line);
-    padding: 20px 0;
-  }
-  nav .container { display: flex; justify-content: space-between; align-items: center; }
-  .logo {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 144;
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--ink);
-    letter-spacing: -0.01em;
-    text-decoration: none;
-  }
-  .nav-links { display: flex; gap: 28px; }
-  .nav-links a {
-    color: var(--ink-soft);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--accent); }
-  @media (max-width: 720px) { .nav-links { display: none; } }
 
-  .hero { padding: 100px 0; }
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    gap: 64px;
-    align-items: center;
-  }
-  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 48px; } }
-  .hero-tagline {
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--accent);
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-  }
-  .hero h1 {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 144;
-    font-size: clamp(48px, 6.5vw, 84px);
-    font-weight: 400;
-    line-height: 1.02;
-    letter-spacing: -0.035em;
-    margin-bottom: 28px;
-    color: var(--ink);
-  }
-  .hero h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
-  .hero p.lead {
-    font-size: clamp(17px, 2vw, 20px);
-    color: var(--ink-soft);
-    margin-bottom: 40px;
-    line-height: 1.5;
-  }
-  .hero-portrait {
-    width: 100%;
-    aspect-ratio: 4/5;
-    background: var(--photo-bg) url('joane-hero-brown.jpg') center 15% / cover no-repeat;
-    border-radius: 20px;
-    box-shadow: 0 12px 40px rgba(26, 26, 46, 0.15);
-  }
-  @media (max-width: 900px) { .hero-portrait { max-width: 420px; margin: 0 auto; } }
 
-  .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
-  .btn {
-    display: inline-block;
-    padding: 14px 28px;
-    font-size: 15px;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.2s;
-    cursor: pointer;
-    border: none;
-    font-family: inherit;
-  }
-  .btn-primary { background: var(--ink); color: var(--bg); }
-  .btn-primary:hover { background: var(--accent); transform: translateY(-1px); }
-  .btn-secondary { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
-  .btn-secondary:hover { background: var(--ink); color: var(--bg); }
 
-  section { padding: 100px 0; border-top: 1px solid var(--line); }
-  .section-label {
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--accent);
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-  }
-  .section-title {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 144;
-    font-size: clamp(36px, 5.5vw, 56px);
-    font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: -0.025em;
-    margin-bottom: 48px;
-    max-width: 720px;
-    color: var(--ink);
-  }
-  .section-intro { font-size: 20px; color: var(--ink-soft); max-width: 720px; margin-bottom: 48px; line-height: 1.55; }
-  .about-text { font-size: 20px; color: var(--ink-soft); max-width: 720px; margin-bottom: 24px; line-height: 1.55; }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-    margin-top: 48px;
-  }
-  .service-card {
-    background: var(--card);
-    padding: 32px;
-    border-radius: 12px;
-    border: 1px solid var(--line);
-    transition: all 0.2s;
-  }
-  .service-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-  .service-card h3 {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 60;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: -0.015em;
-    margin-bottom: 12px;
-    color: var(--ink);
-  }
-  .service-card p { color: var(--ink-soft); font-size: 15px; }
-  .service-number {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 60;
-    font-size: 14px;
-    color: var(--accent);
-    font-weight: 500;
-    margin-bottom: 12px;
-    display: block;
-  }
-
-  .work-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 32px;
-    margin-top: 48px;
-  }
-  .work-card {
-    background: var(--card);
-    border-radius: 12px;
-    border: 1px solid var(--line);
-    padding: 40px;
-    transition: all 0.2s;
-  }
-  .work-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-  .work-category {
-    font-size: 12px;
-    color: var(--accent);
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-bottom: 16px;
-  }
-  .work-card h3 {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 60;
-    font-size: 26px;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    margin-bottom: 12px;
-    color: var(--ink);
-  }
-  .work-card p { color: var(--ink-soft); font-size: 15px; margin-bottom: 20px; }
-  .work-metric {
-    display: inline-block;
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 144;
-    font-size: 40px;
-    font-weight: 400;
-    color: var(--ink);
-    line-height: 1;
-    margin-right: 12px;
-    letter-spacing: -0.02em;
-  }
-  .work-metric-label { font-size: 13px; color: var(--ink-soft); }
-
-  /* ====== WORKSHOPS ====== */
-  .workshops-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 32px;
-    margin-top: 48px;
-  }
-  .workshop-card {
-    background: var(--card);
-    border-radius: 16px;
-    border: 1px solid var(--line);
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.2s;
-  }
-  .workshop-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-  .workshop-pill {
-    display: inline-block;
-    background: rgba(217, 119, 87, 0.1);
-    color: var(--accent);
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    width: fit-content;
-  }
-  .workshop-card h3 {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 144;
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    margin-bottom: 14px;
-    color: var(--ink);
-  }
-  .workshop-card .workshop-tagline {
-    color: var(--ink-soft);
-    font-size: 16px;
-    margin-bottom: 24px;
-    line-height: 1.5;
-  }
-  .workshop-outcomes {
-    list-style: none;
-    margin-bottom: 28px;
-    padding: 0;
-  }
-  .workshop-outcomes li {
-    position: relative;
-    padding-left: 24px;
-    margin-bottom: 10px;
-    color: var(--ink);
-    font-size: 15px;
-    line-height: 1.5;
-  }
-  .workshop-outcomes li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-weight: 500;
-  }
-  .workshop-price-row {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-    margin-bottom: 24px;
-    padding-top: 20px;
-    border-top: 1px solid var(--line);
-  }
-  .workshop-price {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 144;
-    font-size: 36px;
-    font-weight: 400;
-    color: var(--ink);
-    letter-spacing: -0.02em;
-  }
-  .workshop-price-note { color: var(--ink-soft); font-size: 14px; }
-  .workshop-card .btn { margin-top: auto; text-align: center; }
-
-  /* ====== CONSULTING ====== */
-  .consulting-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
-    margin-top: 48px;
-  }
-  .consulting-card {
-    background: var(--card);
-    border-radius: 12px;
-    border: 1px solid var(--line);
-    padding: 36px;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.2s;
-  }
-  .consulting-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-  .consulting-card.featured {
-    border-color: var(--accent);
-    background: linear-gradient(180deg, rgba(217, 119, 87, 0.03), var(--card));
-  }
-  .consulting-card h3 {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 60;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: -0.015em;
-    margin-bottom: 10px;
-    color: var(--ink);
-  }
-  .consulting-card .consulting-sub {
-    color: var(--ink-soft);
-    font-size: 15px;
-    margin-bottom: 20px;
-    line-height: 1.5;
-  }
-  .consulting-deliverables {
-    list-style: none;
-    margin-bottom: 24px;
-    padding: 0;
-    flex-grow: 1;
-  }
-  .consulting-deliverables li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 8px;
-    color: var(--ink);
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .consulting-deliverables li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-  }
-  .consulting-price {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 144;
-    font-size: 28px;
-    font-weight: 400;
-    color: var(--ink);
-    margin-bottom: 20px;
-    letter-spacing: -0.02em;
-  }
-  .consulting-price span { font-size: 14px; color: var(--ink-soft); font-weight: 400; font-family: 'Inter', sans-serif; letter-spacing: 0; }
-
-  /* ====== FOUNDER ====== */
-  .founder-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 64px;
-    align-items: start;
-  }
-  @media (max-width: 720px) { .founder-grid { grid-template-columns: 1fr; gap: 32px; } }
-  .founder-photo {
-    width: 100%;
-    aspect-ratio: 4/5;
-    background: var(--photo-bg) url('Confident%20Office%20Portrait%20with%20Curls.png') 47% 20% / cover no-repeat;
-    border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(26, 26, 46, 0.12);
-  }
-  .founder-bio h3 {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 144;
-    font-size: clamp(32px, 4vw, 42px);
-    font-weight: 400;
-    letter-spacing: -0.025em;
-    margin-bottom: 8px;
-    color: var(--ink);
-  }
-  .founder-title {
-    color: var(--accent);
-    font-size: 13px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-bottom: 24px;
-  }
-  .founder-bio p { color: var(--ink-soft); margin-bottom: 16px; line-height: 1.6; }
-  .credentials { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
-  .badge {
-    background: var(--card);
-    border: 1px solid var(--line);
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--ink);
-  }
-
-  /* ====== FAQ ====== */
-  .faq-list { max-width: 760px; }
-  .faq-item {
-    border-bottom: 1px solid var(--line);
-    padding: 24px 0;
-  }
-  .faq-item summary {
-    cursor: pointer;
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 60;
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--ink);
-    letter-spacing: -0.01em;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-  }
-  .faq-item summary::-webkit-details-marker { display: none; }
-  .faq-item summary::after {
-    content: '+';
-    color: var(--accent);
-    font-size: 24px;
-    font-weight: 400;
-    transition: transform 0.2s;
-  }
-  .faq-item[open] summary::after { content: '−'; }
-  .faq-item p {
-    margin-top: 16px;
-    color: var(--ink-soft);
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
-  /* ====== EMAIL SIGNUP ====== */
-  .signup {
-    text-align: center;
-    padding: 100px 0;
-    background: rgba(217, 119, 87, 0.06);
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-  }
-  .signup h2 {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 144;
-    font-size: clamp(32px, 4.5vw, 42px);
-    font-weight: 400;
-    letter-spacing: -0.025em;
-    margin-bottom: 16px;
-    color: var(--ink);
-  }
-  .signup p { color: var(--ink-soft); font-size: 17px; margin-bottom: 32px; }
-  .signup-form {
-    display: flex;
-    gap: 12px;
-    max-width: 480px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .signup-form input[type="email"] {
-    flex: 1;
-    min-width: 220px;
-    padding: 14px 18px;
-    font-size: 15px;
-    font-family: inherit;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    background: var(--card);
-    color: var(--ink);
-  }
-  .signup-form input[type="email"]:focus {
-    outline: none;
-    border-color: var(--accent);
-  }
-
-  /* ====== CONTACT ====== */
-  .contact {
-    text-align: center;
-    padding: 120px 0;
-    background: var(--ink);
-    color: var(--bg);
-    border-top: none;
-  }
-  .contact .section-label { color: var(--accent); }
-  .contact h2 {
-    font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 144;
-    font-size: clamp(40px, 6vw, 64px);
-    font-weight: 400;
-    letter-spacing: -0.03em;
-    margin-bottom: 24px;
-    color: var(--bg);
-  }
-  .contact p {
-    font-size: 18px;
-    color: rgba(250, 248, 245, 0.7);
-    max-width: 480px;
-    margin: 0 auto 40px;
-  }
-  .contact .btn-primary { background: var(--accent); color: var(--bg); }
-  .contact .btn-primary:hover { background: var(--accent-hover); }
-
-  footer {
-    padding: 40px 0;
-    text-align: center;
-    color: var(--ink-soft);
-    font-size: 14px;
-    border-top: 1px solid var(--line);
-  }
-  footer a { color: var(--ink-soft); text-decoration: none; margin: 0 12px; }
-  footer a:hover { color: var(--accent); }
-
-/* Straight, upright headings: turn off Fraunces 'wonky' letters */
-h1,h2,h3,.logo,.section-title,.work-metric,.workshop-price,.consulting-price,.service-number,.faq-item summary,.founder-bio h3{font-variation-settings:'opsz' 72,'WONK' 0,'SOFT' 0 !important;font-variant-numeric:lining-nums !important;letter-spacing:-0.01em !important;}
-/* Straight capital J: borrow only the letter J from Newsreader */
-h1,h2,h3,.logo,.section-title,.faq-item summary,.founder-bio h3{font-family:'Newsreader','Fraunces',serif !important;}
-</style>
-<style>
-/* Sales-page refinements preserve the original palette and type system. */
-:root { --accent: #a9472d; --accent-hover: #913c27; }
-.skip-link { position: fixed; top: -100px; left: 16px; z-index: 200; padding: 12px; background: var(--ink); color: white; }
-.skip-link:focus { top: 8px; }
-:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
-section, header { scroll-margin-top: 100px; }
-.hero { padding: 56px 0; }
-.hero h1 { font-size: clamp(42px, 5.4vw, 68px); line-height: 1.06; }
-.hero-tagline { letter-spacing: .08em; margin-bottom: 18px; }
-.hero p.lead { margin-bottom: 24px; }
-.hero-note, .offer-note { color: var(--ink-soft); font-size: 14px; line-height: 1.65; margin: 20px 0; }
-.offer-note a { color: var(--ink); text-underline-offset: 3px; }
-.hero-note { margin-bottom: 0; }
-.workshop-card:first-child { border-top: 4px solid var(--accent); }
-.workshops-grid, .consulting-grid, .services-grid, .work-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
-.workshop-card .btn { margin-top: 12px; }
-.btn { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; }
-.hero-grid > *, .founder-grid > * { min-width: 0; }
-@media (max-width: 720px) {
- .container { padding: 0 20px; }
- nav { padding: 12px 0; }
- nav .container { flex-wrap: wrap; gap: 10px; }
- .nav-links { display: flex; gap: 8px 16px; flex-wrap: wrap; }
- .nav-links a { min-height: 40px; display: inline-flex; align-items: center; }
- .nav-links a:nth-child(n+3) { display: none; }
- section { padding: 56px 0; }
- .hero { padding: 32px 0; }
- .hero-grid { grid-template-columns: 1fr; gap: 24px; }
- .hero-portrait { max-width: 100%; aspect-ratio: 16/9; background-position: center 25%; }
- .section-title { margin-bottom: 24px; }
- .section-intro { font-size: 18px; margin-bottom: 28px; }
- .workshop-card, .consulting-card, .work-card, .service-card { padding: 24px; }
- .cta-row .btn { width: 100%; }
- .signup-form input[type=email] { min-width: 0; width: 100%; flex-basis: 100%; }
- .contact .btn { max-width: 100%; overflow-wrap: anywhere; }
-}
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
-</style>
 <script defer="" src="booking-config.js"></script>
-<script defer="" src="booking.js"></script><style>[hidden] { display: none !important; } .workshop-card .btn + .btn { margin-top: 12px; }</style><style>.steps-list { list-style: none; padding: 0; } #how-it-works { padding-bottom: 56px; }</style><style>
-.linkedin-subheading { font-size: 22px; margin: 28px 0 12px; }
-.linkedin-steps { padding-left: 24px; max-width: 800px; color: var(--ink-soft); }
-.linkedin-steps li { padding: 6px 0 6px 6px; }
-.linkedin-price { display: flex; gap: 8px 12px; flex-wrap: wrap; align-items: baseline; margin: 16px 0; }
-.linkedin-price del { color: var(--ink-soft); font-size: 20px; }
-.linkedin-price strong { font-size: 32px; font-weight: 500; }
-.linkedin-price > span:not(.sr-only) { flex-basis: 100%; font-size: 14px; color: var(--ink-soft); }
-.linkedin-delivery { font-size: 15px; margin: 8px 0 20px; }
-.linkedin-opening { margin-top: auto; font-size: 16px; font-weight: 600; padding: 14px 0 0; }
-.linkedin-cards h4 { font-size: 16px; margin-bottom: 12px; }
-.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-nav .container { flex-wrap: wrap; gap: 12px; }
-.nav-links { flex-wrap: wrap; gap: 12px 20px; }
-@media (max-width: 720px) { .nav-links a.linkedin-menu-link { display: inline-flex; } }
-</style><style>
-/* Upright lettering without the curved display-font shapes. */
-h1,h2,h3,h4,.logo,.section-title,.work-metric,.workshop-price,.consulting-price,.service-number,.faq-item summary,.founder-bio h3,.hero h1 em {
- font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
- font-style: normal !important; font-variation-settings: normal !important; font-variant-ligatures: none; letter-spacing: -.025em !important;
-}
-.service-inquiry-form { max-width: 680px; display: grid; gap: 12px; }
-.service-inquiry-form label { font-weight: 500; margin-top: 8px; }
-.service-inquiry-form input,.service-inquiry-form select,.service-inquiry-form textarea { width:100%; max-width:100%; min-width:0; padding:14px; background:white; border:1px solid var(--line); border-radius:8px; color:var(--ink); font:inherit; }
-.service-inquiry-form textarea { min-height:140px; resize:vertical; }
-.service-inquiry-form .btn { justify-self: start; }
-</style></head>
-<body><a class="skip-link" href="#workshops">Skip to workshops</a>
-<nav>
-<div class="container">
-<a class="logo" href="#top">Ahmir &amp; Jael Co.</a>
-<div class="nav-links"><a href="#workshops">Workshops</a><a class="linkedin-menu-link" href="#linkedin-services">LinkedIn Services</a><a href="#personal-help">Personal help</a><a href="#founder">Meet Joane</a><a href="#faq">FAQ</a><a href="#consulting">Business services</a></div>
-</div>
-</nav>
-<header class="hero" id="top">
+<script defer="" src="booking.js"></script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="/styles.css" rel="stylesheet"/><link href="https://ahmirjael.netlify.app/" rel="canonical"/></head><body><a class="skip-link" href="#workshops">Skip to main content</a><nav aria-label="Main navigation"><div class="container"><a class="logo" href="/">Ahmir &amp; Jael Co.</a><div class="nav-links"><a aria-current="page" href="/#workshops">Workshops</a><a href="/linkedin-services.html">LinkedIn Services</a><a href="/consulting.html">Consulting</a><a href="/contact.html">Contact</a></div></div></nav><main id="main-content"><header class="hero" id="top">
 <div class="container">
 <div class="hero-grid">
 <div>
 <span class="hero-tagline">Live AI workshops · Beginners welcome</span>
 <h1>Build your business website <em>with AI.</em></h1>
 <p class="lead">Start with a free 30-minute live demo. Then join Joane for a hands-on website workshop, with no coding experience needed.</p>
-<div class="cta-row"><a class="btn btn-primary" href="https://luma.com/upvxjs5y" rel="noopener noreferrer" target="_blank">Save my free spot</a><a class="btn btn-secondary" href="#personal-help">Get personal AI help</a></div><p class="hero-note">Live on Google Meet · Beginners welcome</p>
+<div class="cta-row"><a class="btn btn-primary" href="https://luma.com/upvxjs5y" rel="noopener noreferrer" target="_blank">Save my free spot</a><a class="btn btn-secondary" href="#workshops">Explore the paid workshop</a></div><p class="hero-note">Live on Google Meet · Beginners welcome</p>
 </div>
-<div aria-label="Joane Aristilde, Founder &amp; Principal Consultant" class="hero-portrait" role="img"></div>
+<img alt="Joane Aristilde, AI workshop instructor" class="hero-portrait" fetchpriority="high" height="1000" src="/joane-hero-brown.jpg" width="800"/>
 </div>
 </div>
 </header><section aria-labelledby="how-it-works-title" id="how-it-works"><div class="container">
@@ -644,7 +43,7 @@ h1,h2,h3,h4,.logo,.section-title,.work-metric,.workshop-price,.consulting-price,
 <div class="container">
 <span class="section-label">Learn with me</span>
 <h2 class="section-title">Build your business website with Joane.</h2>
-<p class="section-intro">See how it works in the free live demo, or plan to join the four-hour website class in December.</p>
+<p class="section-intro">Watch me build a sample page in the free demo. In the paid workshop, work on your own business website with guided practice, editing, checks, and a publishing attempt.</p>
 <div class="workshops-grid">
 <article class="workshop-card" id="workshop-demo">
 <span class="workshop-pill">Free Live Demo</span>
@@ -655,28 +54,28 @@ h1,h2,h3,h4,.logo,.section-title,.work-metric,.workshop-price,.consulting-price,
 <a class="btn btn-primary" data-booking="demo" href="https://luma.com/upvxjs5y" rel="noopener noreferrer" target="_blank">Save my free spot</a>
 </article>
 <article class="workshop-card" id="workshop-website">
-<span class="workshop-pill">Paid live class · Black Friday Special</span>
+<span class="workshop-pill">Paid live class · Early-bird price</span>
 <h3>Vibe Code with Joane: Build Your Business Website with 0 Coding Experience</h3>
 <p class="workshop-tagline">Build alongside Joane in a hands-on class for beginners and business owners.</p>
 <p><time datetime="2026-12-05T10:00:00-05:00">Sat Dec 5, 2026</time><br/>10am to 2pm ET<br/>Live on Google Meet · 50 seats</p>
-<div class="workshop-price-row"><span class="workshop-price">$99</span><span class="workshop-price-note">Black Friday Special through Nov 30, 2026. Then $149.</span></div>
-<p class="offer-note" data-details="website">The Black Friday offer includes a short feedback form and permission to quote your genuine feedback. See Eventbrite for the full terms, ticket fees, and refund policy.</p>
-<a class="btn btn-primary" data-booking="website" href="https://www.eventbrite.com/e/vibe-code-with-joane-build-your-business-website-with-0-coding-experience-tickets-2003754609978" rel="noopener noreferrer" target="_blank">Get the Black Friday price</a>
+<div class="workshop-price-row"><span class="workshop-price">$99</span><span class="workshop-price-note">Early-bird price through Nov 30, 2026. Then $149.</span></div>
+<p class="offer-note" data-details="website">Eventbrite lists this as the Black Friday Special. It includes a short feedback form and permission to quote your genuine feedback. See the listing for full terms, fees, and refunds.</p>
+<a class="btn btn-primary" data-booking="website" href="https://www.eventbrite.com/e/vibe-code-with-joane-build-your-business-website-with-0-coding-experience-tickets-2003754609978" rel="noopener noreferrer" target="_blank">Get the $99 early-bird price</a>
 <a class="btn btn-secondary" href="https://luma.com/upvxjs5y" rel="noopener noreferrer" target="_blank">Join the free demo first</a>
 </article></div>
 </div>
 </section><section id="outcomes"><div class="container">
 <span class="section-label">Practical progress</span><h2 class="section-title">Bring an idea. Make it tangible.</h2>
-<div class="services-grid"><article class="service-card"><span class="service-number">01 · Plan</span><h3>Choose one useful project</h3><p>Start with a small idea for your business or daily life. Break it into steps you can follow.</p></article>
+<div class="services-grid"><article class="service-card"><span class="service-number">01 · Plan</span><h3>Choose one useful project</h3><p>Start with a small idea for your business. Break it into steps you can follow.</p></article>
 <article class="service-card"><span class="service-number">02 · Build</span><h3>Practice with live guidance</h3><p>Use AI to create, review, and improve your work. Ask questions as you go.</p></article>
 <article class="service-card"><span class="service-number">03 · Continue</span><h3>Know your next step</h3><p>Understand what to improve next and how to share your website. Progress depends on your idea and setup.</p></article></div>
-<p class="offer-note">Curious about Joane’s own projects? <a href="#work">Explore MoneyTrap and other selected work.</a></p>
+
 </div></section><section id="founder">
 <div class="container">
 <span class="section-label">Your instructor</span>
 <h2 class="section-title">Meet your instructor.</h2>
 <div class="founder-grid">
-<div aria-label="Joane Aristilde" class="founder-photo" role="img"></div>
+<img alt="Joane Aristilde, your workshop instructor" class="founder-photo" height="1000" loading="lazy" src="/joane-founder-brown.jpg" width="800"/>
 <div class="founder-bio">
 <h3>Joane Aristilde</h3>
 <div class="founder-title">Founder · AI builder · Workshop guide</div>
@@ -685,43 +84,7 @@ h1,h2,h3,h4,.logo,.section-title,.work-metric,.workshop-price,.consulting-price,
 </div>
 </div>
 </div>
-<template id="testimonial-draft">[REAL QUOTE NEEDED]</template></section><section aria-labelledby="linkedin-services-title" id="linkedin-services"><div class="container">
-<span class="section-label">Written help, delivered by email</span>
-<h2 class="section-title" id="linkedin-services-title">LinkedIn Services for Job Seekers</h2>
-<p class="section-intro">Get your LinkedIn and resume working together, reviewed by an IT professional and project manager who has hired and worked with teams at Lyft, McGraw Hill, Carnival and Citrix.</p>
-<h3 class="linkedin-subheading">How it works</h3>
-<ol class="linkedin-steps"><li>Choose a service and fill out a short form (LinkedIn link, resume, one job post).</li><li>Joane reviews everything against the job you want.</li><li>Your report or new profile text arrives by email.</li></ol>
-<div class="consulting-grid linkedin-cards">
-<article class="consulting-card" id="linkedin-audit"><h3>LinkedIn and Resume Audit</h3>
-<p class="linkedin-price"><span class="sr-only">Regular price </span><del>$79.99</del> <strong>$59.99</strong><span>Black Friday Special through Nov 30</span></p>
-<p class="consulting-sub">A written review of your LinkedIn and resume, matched to the job you actually want.</p>
-<h4>What you get</h4><ul class="consulting-deliverables"><li>A written audit report with exactly what to change</li><li>A fix list ranked by what to do first</li><li>A keyword check against your target job post</li><li>A suggested LinkedIn headline and 2 rewritten resume bullets</li></ul>
-<p class="linkedin-delivery"><strong>Delivery:</strong> within 3 business days by email</p>
-<a class="btn btn-primary" data-stan-service="audit" hidden="">Get My Audit for $59.99</a><p class="linkedin-opening">Opening soon</p>
-</article>
-<article class="consulting-card" id="linkedin-update"><h3>LinkedIn Profile Update</h3>
-<p class="linkedin-price"><strong>$99</strong></p>
-<p class="consulting-sub">I rewrite your LinkedIn so it matches your resume and the role you want.</p>
-<h4>What you get</h4><ul class="consulting-deliverables"><li>New headline and About section</li><li>Rewritten experience bullets</li><li>A matched skills list</li><li>Everything delivered as text you paste into LinkedIn yourself</li></ul>
-<p class="linkedin-delivery"><strong>Delivery:</strong> within 5 business days by email</p>
-<a class="btn btn-primary" data-stan-service="update" hidden="">Update My LinkedIn</a><p class="linkedin-opening">Opening soon</p>
-</article></div>
-<p class="offer-note linkedin-privacy">We never need your LinkedIn password, SSN or bank details.</p>
-<h3 class="linkedin-subheading">Who it's for</h3><p>Job seekers in any field, career changers, people returning to work, and anyone applying a lot and hearing nothing back.</p>
-<h3 class="linkedin-subheading">Your reviewer</h3><p>Joane Aristilde, IT degree, MBA, Technical Program Manager, PMP, CSM, CSPO and SAFe certified.</p>
-<p class="offer-note linkedin-testimonial">[REAL QUOTE NEEDED]</p>
-</div></section><section id="personal-help"><div class="container">
-<span class="section-label">Work with me one on one</span><h2 class="section-title">AI help for your next task.</h2>
-<p class="section-intro">Tell me what you need help with, such as a job-search workflow, a website, or a document task. Send an inquiry below so we can agree on the scope and price by email.</p>
-<div class="consulting-grid"><article class="consulting-card featured"><h3>Personal AI help</h3>
-<p class="consulting-sub">Focused guidance for your task, at your pace.</p><ul class="consulting-deliverables"><li>Choose one task together</li><li>Work through it step by step</li><li>Identify what to do next</li></ul>
-<p class="offer-note" id="personal-terms">Ask for current availability and pricing. Scope and payment arrangements are agreed by email before work begins.</p>
-<a class="btn btn-primary" data-inquiry="personal" href="#service-inquiry">Ask about personal AI help</a></article>
-<article class="consulting-card"><h3>Need help with your business?</h3><p class="consulting-sub">Describe the project you want help with. We will review what you need and discuss a suitable scope by email.</p>
-<div class="consulting-price">Quote before work begins</div><p class="offer-note">Send your project details using the inquiry form below. We will discuss the scope and next steps by email.</p>
-<a class="btn btn-secondary" data-inquiry="business" href="#service-inquiry">Ask about a business project</a></article></div>
-<template id="proposed-personal-offer"><p>Owner review only: proposed personal AI session, 90 minutes, $149. Confirm commercial terms and the corresponding public paid booking event before enabling.</p></template>
-</div></section><section id="faq">
+<template id="testimonial-draft">[REAL QUOTE NEEDED]</template></section><section id="faq">
 <div class="container">
 <span class="section-label">Before you join</span>
 <h2 class="section-title">Questions, answered.</h2>
@@ -738,163 +101,16 @@ h1,h2,h3,h4,.logo,.section-title,.work-metric,.workshop-price,.consulting-price,
 <summary>Are workshops recorded?</summary>
 <p>No. Workshops are live-only, with real-time questions and help. When registration opens, read the specific Eventbrite listing for its refund terms before purchasing.</p>
 </details>
+
+
 <details class="faq-item">
-<summary>How do I know if consulting is right for my business?</summary>
-<p>Use the inquiry form to describe your business project. We will discuss scope and pricing by email. For LinkedIn services, the written report or profile text is delivered by email.</p>
-</details>
-<details class="faq-item">
-<summary>What size clients do you work with?</summary>
-<p>Mostly small businesses, solopreneurs, and community organizations. Larger engagements happen through my program management work with enterprise clients,  reach out if that's what you need.</p>
-</details>
-<details class="faq-item">
-<summary>How do payments and invoicing work?</summary>
-<p>Reserve the free demo through Luma. Paid workshop registration will use Eventbrite when tickets are published. Read the event listing for the total price, fees, refund terms, and joining instructions. Consulting and personal-session scope and payment arrangements are agreed before booking.</p>
+<summary>How do I register and pay?</summary>
+<p>Reserve the free demo through Luma. Register and pay for the December class through Eventbrite. Read the event listing for the total price, fees, refund terms, and joining instructions.</p>
 </details>
 <details class="faq-item"><summary>Will I need paid AI tools?</summary><p>Bring a laptop, a stable internet connection, a free Google account, and an idea. The confirmed event listing will identify the tools, accounts, and any extra software costs required. Check those details before buying a ticket.</p></details>
-<details class="faq-item"><summary>Will my website be published by the end?</summary><p>We work on a business website. Publishing depends on your project, tools, and setup. App Store publishing is not part of this class.</p></details></div>
+<details class="faq-item"><summary>Will my website be published by the end?</summary><p>I guide a publishing attempt for a simple business website. Publishing depends on the tools, your account, and your project. Keep a saved copy if it is not ready. The paid class includes follow-up help for publishing problems.</p></details></div>
 </div>
-</section><section id="about">
-<div class="container">
-<span class="section-label">Approach</span>
-<h2 class="section-title">We ship what we design.</h2>
-<p class="about-text">Most consultants hand you a deck and walk away. We stay. Our engagements combine executive strategy with hands-on delivery,  leveraging Claude Code, Cursor, CapCut, and modern AI-assisted tooling to accelerate real outcomes.</p>
-<p class="about-text">We work with small businesses, community organizations, and technology teams. The aim is to make the work clear, practical, and useful.</p>
-</div>
-</section><section id="services">
-<div class="container">
-<span class="section-label">Practice Areas</span>
-<h2 class="section-title">What we do.</h2>
-<div class="services-grid">
-<div class="service-card">
-<span class="service-number">01</span>
-<h3>AI Product &amp; Program Delivery</h3>
-<p>Application development, GenAI/RAG solutions, and data migration programs,  from strategy through production launch.</p>
-</div>
-<div class="service-card">
-<span class="service-number">02</span>
-<h3>Technical Program Management</h3>
-<p>Roadmap coordination, cross-functional execution, dependency management, and executive reporting for complex delivery.</p>
-</div>
-<div class="service-card">
-<span class="service-number">03</span>
-<h3>Digital Marketing &amp; Content Creation</h3>
-<p>Content strategy, video production, and social channel execution using CapCut and AI-assisted tooling.</p>
-</div>
-<div class="service-card">
-<span class="service-number">04</span>
-<h3>CRM &amp; Workflow Automation</h3>
-<p>System selection, client onboarding, and revenue operations enablement.</p>
-</div>
-<div class="service-card">
-<span class="service-number">05</span>
-<h3>Finance Operations Modernization</h3>
-<p>Financial reporting automation, consolidation workflows, and finance operations transformation.</p>
-</div>
-</div>
-</div>
-</section><section id="work">
-<div class="container">
-<span class="section-label">Selected Work</span>
-<h2 class="section-title">Projects behind the practice.</h2>
-<div class="work-grid">
-<div class="work-card">
-<div class="work-category">Production GenAI · RAG</div>
-<h3>Heritage Condominium AI Operations Platform</h3>
-<p>An AI operations assistant project for condominium workflows, using GPT-4, Pinecone, AWS Lambda, and API Gateway.</p>
-</div>
-<div class="work-card">
-<div class="work-category">Fintech · NLP · Mobile</div>
-<h3>MoneyTrap</h3>
-<p>An AI-powered personal finance app project, built with React, Node.js, and PostgreSQL.</p>
-</div>
-<div class="work-card">
-<div class="work-category">iOS · AI-Assisted Build</div>
-<h3>Lavender Life Planner</h3>
-<p>A life-planning app project built with AI-assisted development.</p>
-</div>
-</div>
-</div>
-</section><section id="consulting">
-<div class="container">
-<span class="section-label">Work With Me</span>
-<h2 class="section-title">Consulting engagements.</h2>
-<p class="section-intro">For small businesses and organizations that want practical help with AI, websites, and everyday operations. Send an inquiry to discuss scope and pricing by email.</p>
-<div class="consulting-grid">
-<div class="consulting-card featured">
-<h3>Business project inquiry</h3>
-<p class="consulting-sub">Tell me about your business, the problem you want to solve, and what you would like to build.</p>
-<ul class="consulting-deliverables">
-<li>Honest read on your biggest time drain</li>
-<li>2–3 concrete directions</li>
-<li>Clear next step</li>
-</ul>
-<div class="consulting-price">Quote before work begins</div>
-<p class="offer-note">Send your project details using the inquiry form below. We will discuss the scope and next steps by email.</p><a class="btn btn-primary" data-inquiry="business" href="#service-inquiry">Ask about a business project</a>
-</div>
-<div class="consulting-card">
-<h3>Monthly Close &amp; Reporting</h3>
-<p class="consulting-sub">Clean financial reports every month, including multi-entity consolidation for small businesses, condos, and HOAs.</p>
-<ul class="consulting-deliverables">
-<li>Monthly reconciliation across accounts</li>
-<li>Multi-entity consolidation</li>
-<li>Clean report pack delivered by the 10th</li>
-<li>Not a CPA firm,  we partner with yours</li>
-</ul>
-<div class="consulting-price"><span style="margin-right:6px">from</span>$1,200<span>/month</span></div>
-<a class="btn btn-secondary" href="mailto:joanearistilde@gmail.com?subject=Monthly%20Close%20%26%20Reporting">Request details</a>
-</div>
-<div class="consulting-card">
-<h3>AI Automation Sprint</h3>
-<p class="consulting-sub">Two weeks. We identify one high-leverage workflow and build the AI-powered automation that fixes it.</p>
-<ul class="consulting-deliverables">
-<li>Workflow discovery session</li>
-<li>Built automation using Claude, OpenAI, or similar</li>
-<li>Documentation and training</li>
-<li>30 days of support after handoff</li>
-</ul>
-<div class="consulting-price"><span style="margin-right:6px">from</span>$3,500</div>
-<a class="btn btn-secondary" href="mailto:joanearistilde@gmail.com?subject=AI%20Automation%20Sprint">Request details</a>
-</div>
-<div class="consulting-card">
-<h3>Small Business Website Build</h3>
-<p class="consulting-sub">Two to three weeks. A professional, AI-assisted website for your business,  designed, built, and launched.</p>
-<ul class="consulting-deliverables">
-<li>Brand and copy workshop</li>
-<li>Custom-built site, mobile responsive</li>
-<li>Netlify or Vercel deployment with your domain</li>
-<li>30-day support</li>
-</ul>
-<div class="consulting-price"><span style="margin-right:6px">from</span>$2,500</div>
-<div style="font-size: 14px; color: var(--ink-soft); margin-top: -12px; margin-bottom: 20px;">+ $125/month care plan available</div>
-<a class="btn btn-secondary" href="mailto:joanearistilde@gmail.com?subject=Small%20Business%20Website%20Build">Request details</a>
-</div>
-<div class="consulting-card">
-<h3>Project Launch Manager</h3>
-<p class="consulting-sub">One project, start to finish. Vendor rollouts, system switches, app launches, major repairs. For condos, HOAs, and small businesses.</p>
-<ul class="consulting-deliverables">
-<li>Project plan and timeline</li>
-<li>Vendor coordination and status reports</li>
-<li>Weekly check-ins</li>
-<li>Final handoff documentation</li>
-</ul>
-<div class="consulting-price">$2,500 <span>flat</span></div>
-<a class="btn btn-secondary" href="mailto:joanearistilde@gmail.com?subject=Project%20Launch%20Manager">Request details</a>
-</div>
-</div>
-<p class="consulting-note" style="margin-top:32px;color:var(--ink-soft);font-size:14px;">Not a CPA firm. We don't prepare taxes or sign audit opinions. For CPA services, we work alongside your existing accountant.</p>
-</div>
-</section><section aria-labelledby="service-inquiry-title" id="service-inquiry"><div class="container">
-<span class="section-label">Get in touch</span><h2 class="section-title" id="service-inquiry-title">Tell me what you need.</h2>
-<p class="section-intro">Send an inquiry about personal AI help or a business project. This form requests information. It does not book a service or take payment.</p>
-<form action="/inquiry-sent.html" class="service-inquiry-form" data-netlify="true" method="POST" name="service-inquiry" netlify-honeypot="bot-field">
-<input name="form-name" type="hidden" value="service-inquiry"/><p hidden=""><label>Leave this field empty<input name="bot-field"/></label></p>
-<label for="inquiry-service">What would you like help with?</label><select id="inquiry-service" name="service" required=""><option value="personal">Personal AI help</option><option value="business">Business project inquiry</option></select>
-<label for="inquiry-email">Your email</label><input autocomplete="email" id="inquiry-email" name="email" required="" type="email"/>
-<label for="inquiry-message">What do you need help with?</label><textarea id="inquiry-message" maxlength="4000" name="message" required=""></textarea>
-<p class="offer-note">Your email and message are used to respond to this inquiry. Do not include passwords, payment details, or private documents.</p>
-<button class="btn btn-primary" type="submit">Send my inquiry</button>
-</form><p class="offer-note">Prefer email? Write to <a href="mailto:joanearistilde@gmail.com">joanearistilde@gmail.com</a>.</p>
-</div></section><section class="signup" id="signup">
+</section><section class="signup" id="signup">
 <div class="container">
 <h2>Get notified about the next workshop.</h2>
 <p>Get an email when a new workshop opens. Your email is used for workshop announcements.</p>
@@ -904,30 +120,4 @@ h1,h2,h3,h4,.logo,.section-title,.work-metric,.workshop-price,.consulting-price,
 <button class="btn btn-primary" type="submit">Keep me posted</button>
 </form>
 </div>
-</section><section class="contact" id="contact">
-<div class="container">
-<span class="section-label">Get in touch</span>
-<h2>Let's build something.</h2>
-<p>For engagements, partnership inquiries, or a first conversation,  reach out directly.</p>
-<div class="cta-row" style="justify-content: center;">
-<a class="btn btn-primary" href="mailto:joanearistilde@gmail.com">joanearistilde@gmail.com</a>
-<a class="btn btn-secondary" href="https://linkedin.com/in/joane-aristilde" style="border-color: var(--bg); color: var(--bg);">LinkedIn</a>
-</div>
-</div>
-</section>
-<!-- ============ WORKSHOPS (NEW) ============ -->
-<!-- ============ CONSULTING (NEW) ============ -->
-<!-- ============ FAQ (NEW) ============ -->
-<!-- ============ EMAIL SIGNUP (NEW) ============ -->
-<footer>
-<div class="container">
-<p>© 2026 Ahmir &amp; Jael, LLC · Miami, FL</p>
-<p style="margin-top: 12px;">
-<a href="mailto:joanearistilde@gmail.com">Email</a> ·
-      <a href="https://linkedin.com/in/joane-aristilde">LinkedIn</a> ·
-      <a href="https://github.com/Jaristilde">GitHub</a>
-</p>
-</div>
-</footer>
-</body>
-</html>
+</section></main><footer><div class="container"><p>© 2026 Ahmir &amp; Jael Co. · Miami, FL</p><p class="legal-name">Ahmir &amp; Jael, LLC</p><p><a href="/contact.html">Contact</a><a href="https://linkedin.com/in/joane-aristilde">LinkedIn</a><a href="https://github.com/Jaristilde">GitHub</a></p></div></footer></body></html>
