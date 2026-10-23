@@ -22,3 +22,7 @@ Paid Eventbrite link is pending. The paid button is hidden, with no placeholder 
 No merge to main or production release. Review https://deploy-preview-1--ahmirjael.netlify.app/ first.
 Confirm the published Eventbrite listing matches the approved dates, prices, capacity, fees and refund terms. Calendly/Google Calendar sync and Netlify form processing still require provider-side verification.
 No testimonials are displayed. An inert template uses [REAL QUOTE NEEDED]. No income claims are added. Public copy uses no em dashes.
+
+## Requested follow-ups
+
+Added a three-step How it works section above the cards. All Luma buttons open a new tab with noopener/noreferrer. Paid-card fallback says Join the free demo first with Black Friday Special tickets open soon. Page and social titles explicitly feature the free Nov 5 demo. PR 1 remains unmerged.
