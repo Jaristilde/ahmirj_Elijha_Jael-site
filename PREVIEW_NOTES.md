@@ -30,3 +30,9 @@ Added a three-step How it works section above the cards. All Luma buttons open a
 ## LinkedIn Services
 
 Added the owner-provided email-only LinkedIn Services for Job Seekers section and navigation link. Includes two written services, a shared three-step process, delivery times, reviewer details, privacy text, and [REAL QUOTE NEEDED]. Both Stan Store buttons stay hidden without URLs and show Opening soon. No resume upload form, credential collection, guarantees, testimonials, or checkout was created. The short intake form will belong to the eventual service purchase flow. Employer/credential copy is owner-supplied; no endorsement logos were added. Existing live workshop offers are separate from these written services.
+
+## Heading and inquiry fixes
+
+All headings and price display type now use upright Inter instead of Fraunces/Newsreader. Personal-help and business inquiry buttons lead to #service-inquiry and preselect the appropriate request. Discovery-call copy was replaced with written business-project inquiries. The form uses Netlify Forms with the name service-inquiry, honeypot, required email/message, and a dedicated success destination. No custom backend, third-party form tool, or payment handling was added.
+
+Before launch, verify that Netlify form detection is enabled, that service-inquiry appears in Forms, and that submission notification emails reach the owner. No fake lead was submitted. The deployed HTML can confirm detection but cannot prove owner email delivery. Checkout still requires published Eventbrite and Stan Store purchase links and confirmed personal-help pricing if offered as a paid purchase. PR remains unmerged pending review and checkout readiness.

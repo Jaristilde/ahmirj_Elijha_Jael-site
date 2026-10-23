@@ -25,23 +25,9 @@
     link.hidden = false;
     document.querySelector('[data-details="website"]').textContent = 'Register on Eventbrite. Check the listing for ticket fees and refund terms before paying.';
   }
-  const discoveryUrl = config.discovery && publicUrl(config.discovery.url, 'calendly.com');
-  if (discoveryUrl) {
-    document.querySelectorAll('[data-booking="discovery"]').forEach(link => {
-      link.href = discoveryUrl;
-      link.textContent = 'Book a free discovery call';
+  document.querySelectorAll('[data-inquiry]').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('#inquiry-service').value = link.dataset.inquiry;
     });
-    document.querySelectorAll('[data-details="discovery"]').forEach(note => {
-      note.textContent = 'Choose a time on Calendly. Check the timezone shown before confirming.';
-    });
-  }
-  const personal = config.personal;
-  const personalUrl = personal && publicUrl(personal.url, 'calendly.com');
-  const sameEvent = personalUrl && discoveryUrl && new URL(personalUrl).pathname.replace(/\/$/, '') === new URL(discoveryUrl).pathname.replace(/\/$/, '');
-  if (personalUrl && personal.confirmed === true && hasText(personal.terms) && !sameEvent) {
-    const link = document.querySelector('[data-booking="personal"]');
-    link.href = personalUrl;
-    link.textContent = 'Book personal AI help';
-    document.querySelector('#personal-terms').textContent = personal.terms;
-  }
+  });
 })();

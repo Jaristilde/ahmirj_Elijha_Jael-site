@@ -606,6 +606,17 @@ section, header { scroll-margin-top: 100px; }
 nav .container { flex-wrap: wrap; gap: 12px; }
 .nav-links { flex-wrap: wrap; gap: 12px 20px; }
 @media (max-width: 720px) { .nav-links a.linkedin-menu-link { display: inline-flex; } }
+</style><style>
+/* Upright lettering without the curved display-font shapes. */
+h1,h2,h3,h4,.logo,.section-title,.work-metric,.workshop-price,.consulting-price,.service-number,.faq-item summary,.founder-bio h3,.hero h1 em {
+ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+ font-style: normal !important; font-variation-settings: normal !important; font-variant-ligatures: none; letter-spacing: -.025em !important;
+}
+.service-inquiry-form { max-width: 680px; display: grid; gap: 12px; }
+.service-inquiry-form label { font-weight: 500; margin-top: 8px; }
+.service-inquiry-form input,.service-inquiry-form select,.service-inquiry-form textarea { width:100%; max-width:100%; min-width:0; padding:14px; background:white; border:1px solid var(--line); border-radius:8px; color:var(--ink); font:inherit; }
+.service-inquiry-form textarea { min-height:140px; resize:vertical; }
+.service-inquiry-form .btn { justify-self: start; }
 </style></head>
 <body><a class="skip-link" href="#workshops">Skip to workshops</a>
 <nav>
@@ -701,14 +712,14 @@ nav .container { flex-wrap: wrap; gap: 12px; }
 <p class="offer-note linkedin-testimonial">[REAL QUOTE NEEDED]</p>
 </div></section><section id="personal-help"><div class="container">
 <span class="section-label">Work with me one on one</span><h2 class="section-title">AI help for your next task.</h2>
-<p class="section-intro">Stuck on something specific? Ask about personal help with a job-search workflow, a website, or a document task. We’ll agree on one clear goal before the session.</p>
+<p class="section-intro">Tell me what you need help with, such as a job-search workflow, a website, or a document task. Send an inquiry below so we can agree on the scope and price by email.</p>
 <div class="consulting-grid"><article class="consulting-card featured"><h3>Personal AI help</h3>
 <p class="consulting-sub">Focused guidance for your task, at your pace.</p><ul class="consulting-deliverables"><li>Choose one task together</li><li>Work through it step by step</li><li>Identify what to do next</li></ul>
-<p class="offer-note" id="personal-terms">Ask for current availability, session length, and pricing. Scope and payment arrangements are agreed before you book.</p>
-<a class="btn btn-primary" data-booking="personal" href="mailto:joanearistilde@gmail.com?subject=Personal%20AI%20help%20inquiry">Request session details</a></article>
-<article class="consulting-card"><h3>Need help with your business?</h3><p class="consulting-sub">A free discovery call is for discussing a larger project and whether we’re a fit. It is separate from a paid teaching session.</p>
-<div class="consulting-price">Free <span>· 30 min</span></div><p class="offer-note" data-details="discovery">Email to arrange a call while online scheduling is being connected.</p>
-<a class="btn btn-secondary" data-booking="discovery" href="mailto:joanearistilde@gmail.com?subject=Discovery%20call%20request">Request a discovery call</a></article></div>
+<p class="offer-note" id="personal-terms">Ask for current availability and pricing. Scope and payment arrangements are agreed by email before work begins.</p>
+<a class="btn btn-primary" data-inquiry="personal" href="#service-inquiry">Ask about personal AI help</a></article>
+<article class="consulting-card"><h3>Need help with your business?</h3><p class="consulting-sub">Describe the project you want help with. We will review what you need and discuss a suitable scope by email.</p>
+<div class="consulting-price">Quote before work begins</div><p class="offer-note">Send your project details using the inquiry form below. We will discuss the scope and next steps by email.</p>
+<a class="btn btn-secondary" data-inquiry="business" href="#service-inquiry">Ask about a business project</a></article></div>
 <template id="proposed-personal-offer"><p>Owner review only: proposed personal AI session, 90 minutes, $149. Confirm commercial terms and the corresponding public paid booking event before enabling.</p></template>
 </div></section><section id="faq">
 <div class="container">
@@ -729,7 +740,7 @@ nav .container { flex-wrap: wrap; gap: 12px; }
 </details>
 <details class="faq-item">
 <summary>How do I know if consulting is right for my business?</summary>
-<p>Request a free business discovery call to discuss a project. For personal teaching or task guidance, use the separate personal AI help inquiry. A free call does not include a paid lesson.</p>
+<p>Use the inquiry form to describe your business project. We will discuss scope and pricing by email. For LinkedIn services, the written report or profile text is delivered by email.</p>
 </details>
 <details class="faq-item">
 <summary>What size clients do you work with?</summary>
@@ -807,18 +818,18 @@ nav .container { flex-wrap: wrap; gap: 12px; }
 <div class="container">
 <span class="section-label">Work With Me</span>
 <h2 class="section-title">Consulting engagements.</h2>
-<p class="section-intro">For small businesses and growing organizations ready to put AI, automation, and smarter operations to work. Start with a free call,  we'll scope what fits.</p>
+<p class="section-intro">For small businesses and organizations that want practical help with AI, websites, and everyday operations. Send an inquiry to discuss scope and pricing by email.</p>
 <div class="consulting-grid">
 <div class="consulting-card featured">
-<h3>Discovery Call</h3>
-<p class="consulting-sub">30 minutes. We talk about your business, your bottleneck, and whether we're a fit. Zero pressure, zero cost.</p>
+<h3>Business project inquiry</h3>
+<p class="consulting-sub">Tell me about your business, the problem you want to solve, and what you would like to build.</p>
 <ul class="consulting-deliverables">
 <li>Honest read on your biggest time drain</li>
 <li>2–3 concrete directions</li>
 <li>Clear next step</li>
 </ul>
-<div class="consulting-price">Free <span>· 30 min</span></div>
-<p class="offer-note" data-details="discovery">Email to arrange a call while online scheduling is being connected.</p><a class="btn btn-primary" data-booking="discovery" href="mailto:joanearistilde@gmail.com?subject=Discovery%20call%20request">Request a discovery call</a>
+<div class="consulting-price">Quote before work begins</div>
+<p class="offer-note">Send your project details using the inquiry form below. We will discuss the scope and next steps by email.</p><a class="btn btn-primary" data-inquiry="business" href="#service-inquiry">Ask about a business project</a>
 </div>
 <div class="consulting-card">
 <h3>Monthly Close &amp; Reporting</h3>
@@ -872,7 +883,18 @@ nav .container { flex-wrap: wrap; gap: 12px; }
 </div>
 <p class="consulting-note" style="margin-top:32px;color:var(--ink-soft);font-size:14px;">Not a CPA firm. We don't prepare taxes or sign audit opinions. For CPA services, we work alongside your existing accountant.</p>
 </div>
-</section><section class="signup" id="signup">
+</section><section aria-labelledby="service-inquiry-title" id="service-inquiry"><div class="container">
+<span class="section-label">Get in touch</span><h2 class="section-title" id="service-inquiry-title">Tell me what you need.</h2>
+<p class="section-intro">Send an inquiry about personal AI help or a business project. This form requests information. It does not book a service or take payment.</p>
+<form action="/inquiry-sent.html" class="service-inquiry-form" data-netlify="true" method="POST" name="service-inquiry" netlify-honeypot="bot-field">
+<input name="form-name" type="hidden" value="service-inquiry"/><p hidden=""><label>Leave this field empty<input name="bot-field"/></label></p>
+<label for="inquiry-service">What would you like help with?</label><select id="inquiry-service" name="service" required=""><option value="personal">Personal AI help</option><option value="business">Business project inquiry</option></select>
+<label for="inquiry-email">Your email</label><input autocomplete="email" id="inquiry-email" name="email" required="" type="email"/>
+<label for="inquiry-message">What do you need help with?</label><textarea id="inquiry-message" maxlength="4000" name="message" required=""></textarea>
+<p class="offer-note">Your email and message are used to respond to this inquiry. Do not include passwords, payment details, or private documents.</p>
+<button class="btn btn-primary" type="submit">Send my inquiry</button>
+</form><p class="offer-note">Prefer email? Write to <a href="mailto:joanearistilde@gmail.com">joanearistilde@gmail.com</a>.</p>
+</div></section><section class="signup" id="signup">
 <div class="container">
 <h2>Get notified about the next workshop.</h2>
 <p>Get an email when a new workshop opens. Your email is used for workshop announcements.</p>
