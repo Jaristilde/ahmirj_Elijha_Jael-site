@@ -2,14 +2,10 @@
   'use strict';
   const config = window.AJ_BOOKING || {};
   const campaignKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
-  function publicUrl(value, provider) {
+  function publicEventUrl(value) {
     try {
       const url = new URL(value);
-      const host = url.hostname.toLowerCase();
-      const hostMatches = host === provider || host === `www.${provider}`;
-      if (url.protocol !== 'https:' || !hostMatches || url.username || url.password) return null;
-      if (provider === 'calendly.com' && (!/^\/[^/]+\/[^/]+\/?$/.test(url.pathname) || /^\/(app|login|signup|integrations|oauth)(\/|$)/i.test(url.pathname))) return null;
-      if (provider === 'eventbrite.com' && !/^\/e\/.+-\d+\/?$/.test(url.pathname)) return null;
+      if (url.protocol !== 'https:' || !['eventbrite.com', 'www.eventbrite.com'].includes(url.hostname.toLowerCase()) || url.username || url.password || !/^\/e\/.+-\d+\/?$/.test(url.pathname)) return null;
       const incoming = new URLSearchParams(window.location.search);
       for (const key of campaignKeys) {
         if (!url.searchParams.has(key) && incoming.has(key)) url.searchParams.set(key, incoming.get(key));
@@ -17,17 +13,36 @@
       return url.href;
     } catch { return null; }
   }
-  const hasText = value => typeof value === 'string' && value.trim().length > 0;
-  const workshopUrl = publicUrl(config.websiteWorkshopUrl, 'eventbrite.com');
-  if (workshopUrl) {
-    const link = document.querySelector('[data-booking="website"]');
-    link.href = workshopUrl;
+  const link = document.querySelector('[data-booking="website"]');
+  const eventUrl = publicEventUrl(config.websiteWorkshopUrl);
+  if (link && eventUrl) {
+    link.href = eventUrl;
     link.hidden = false;
-    document.querySelector('[data-details="website"]').textContent = 'The Black Friday offer includes a short feedback form and permission to quote your genuine feedback. See Eventbrite for the full terms, ticket fees, and refund policy.';
   }
-  document.querySelectorAll('[data-inquiry]').forEach(link => {
-    link.addEventListener('click', () => {
-      document.querySelector('#inquiry-service').value = link.dataset.inquiry;
+  const serviceSelect = document.querySelector('#inquiry-service');
+  const service = new URLSearchParams(window.location.search).get('service');
+  if (serviceSelect && Array.from(serviceSelect.options).some(option => option.value === service)) serviceSelect.value = service;
+  document.querySelectorAll('[data-inquiry]').forEach(anchor => {
+    anchor.addEventListener('click', () => {
+      if (serviceSelect && Array.from(serviceSelect.options).some(option => option.value === anchor.dataset.inquiry)) serviceSelect.value = anchor.dataset.inquiry;
     });
   });
+  // Preserve bookmarks from the former all-in-one page.
+  if (document.querySelector('#workshops')) {
+    const legacy = {
+      '#linkedin-services': '/linkedin-services.html#linkedin-services',
+      '#personal-help': '/consulting.html#personal-help',
+      '#consulting': '/consulting.html#consulting',
+      '#work': '/consulting.html#work',
+      '#services': '/consulting.html#services',
+      '#about': '/consulting.html#about',
+      '#service-inquiry': '/contact.html#service-inquiry',
+      '#contact': '/contact.html#service-inquiry'
+    };
+    if (legacy[window.location.hash]) {
+      const destination = new URL(legacy[window.location.hash], window.location.origin);
+      destination.search = window.location.search;
+      window.location.replace(destination.href);
+    }
+  }
 })();
