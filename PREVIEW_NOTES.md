@@ -28,3 +28,7 @@ Legacy homepage fragments for LinkedIn, consulting, project examples and contact
 - Two Stan Store links remain pending.
 - Verify Netlify form delivery and notification emails in the hosting account; no fake lead or payment is submitted for testing.
 - Eventbrite keeps its existing ticket name until the owner changes it in that account. Slide pricing already uses the same dollar amounts/deadline; no teaching content or external event has been edited in this website update.
+
+## Direct project links
+
+Added the owner-supplied MoneyTrap website, App Store and Google Play destinations to its consulting-page project card. Lavender links to its supplied App Store page. Project names in the homepage instructor introduction also link directly to the products. All links open a new tab with noopener/noreferrer. No ratings, performance metrics, earnings claims or testimonials were added.
