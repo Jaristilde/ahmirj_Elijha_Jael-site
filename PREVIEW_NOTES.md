@@ -26,3 +26,7 @@ No testimonials are displayed. An inert template uses [REAL QUOTE NEEDED]. No in
 ## Requested follow-ups
 
 Added a three-step How it works section above the cards. All Luma buttons open a new tab with noopener/noreferrer. Paid-card fallback says Join the free demo first with Black Friday Special tickets open soon. Page and social titles explicitly feature the free Nov 5 demo. PR 1 remains unmerged.
+
+## LinkedIn Services
+
+Added the owner-provided email-only LinkedIn Services for Job Seekers section and navigation link. Includes two written services, a shared three-step process, delivery times, reviewer details, privacy text, and [REAL QUOTE NEEDED]. Both Stan Store buttons stay hidden without URLs and show Opening soon. No resume upload form, credential collection, guarantees, testimonials, or checkout was created. The short intake form will belong to the eventual service purchase flow. Employer/credential copy is owner-supplied; no endorsement logos were added. Existing live workshop offers are separate from these written services.

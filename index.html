@@ -591,12 +591,27 @@ section, header { scroll-margin-top: 100px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
 </style>
 <script defer="" src="booking-config.js"></script>
-<script defer="" src="booking.js"></script><style>[hidden] { display: none !important; } .workshop-card .btn + .btn { margin-top: 12px; }</style><style>.steps-list { list-style: none; padding: 0; } #how-it-works { padding-bottom: 56px; }</style></head>
+<script defer="" src="booking.js"></script><style>[hidden] { display: none !important; } .workshop-card .btn + .btn { margin-top: 12px; }</style><style>.steps-list { list-style: none; padding: 0; } #how-it-works { padding-bottom: 56px; }</style><style>
+.linkedin-subheading { font-size: 22px; margin: 28px 0 12px; }
+.linkedin-steps { padding-left: 24px; max-width: 800px; color: var(--ink-soft); }
+.linkedin-steps li { padding: 6px 0 6px 6px; }
+.linkedin-price { display: flex; gap: 8px 12px; flex-wrap: wrap; align-items: baseline; margin: 16px 0; }
+.linkedin-price del { color: var(--ink-soft); font-size: 20px; }
+.linkedin-price strong { font-size: 32px; font-weight: 500; }
+.linkedin-price > span:not(.sr-only) { flex-basis: 100%; font-size: 14px; color: var(--ink-soft); }
+.linkedin-delivery { font-size: 15px; margin: 8px 0 20px; }
+.linkedin-opening { margin-top: auto; font-size: 16px; font-weight: 600; padding: 14px 0 0; }
+.linkedin-cards h4 { font-size: 16px; margin-bottom: 12px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+nav .container { flex-wrap: wrap; gap: 12px; }
+.nav-links { flex-wrap: wrap; gap: 12px 20px; }
+@media (max-width: 720px) { .nav-links a.linkedin-menu-link { display: inline-flex; } }
+</style></head>
 <body><a class="skip-link" href="#workshops">Skip to workshops</a>
 <nav>
 <div class="container">
 <a class="logo" href="#top">Ahmir &amp; Jael Co.</a>
-<div class="nav-links"><a href="#workshops">Workshops</a><a href="#personal-help">Personal help</a><a href="#founder">Meet Joane</a><a href="#faq">FAQ</a><a href="#consulting">Business services</a></div>
+<div class="nav-links"><a href="#workshops">Workshops</a><a class="linkedin-menu-link" href="#linkedin-services">LinkedIn Services</a><a href="#personal-help">Personal help</a><a href="#founder">Meet Joane</a><a href="#faq">FAQ</a><a href="#consulting">Business services</a></div>
 </div>
 </nav>
 <header class="hero" id="top">
@@ -659,7 +674,32 @@ section, header { scroll-margin-top: 100px; }
 </div>
 </div>
 </div>
-<template id="testimonial-draft">[REAL QUOTE NEEDED]</template></section><section id="personal-help"><div class="container">
+<template id="testimonial-draft">[REAL QUOTE NEEDED]</template></section><section aria-labelledby="linkedin-services-title" id="linkedin-services"><div class="container">
+<span class="section-label">Written help, delivered by email</span>
+<h2 class="section-title" id="linkedin-services-title">LinkedIn Services for Job Seekers</h2>
+<p class="section-intro">Get your LinkedIn and resume working together, reviewed by an IT professional and project manager who has hired and worked with teams at Lyft, McGraw Hill, Carnival and Citrix.</p>
+<h3 class="linkedin-subheading">How it works</h3>
+<ol class="linkedin-steps"><li>Choose a service and fill out a short form (LinkedIn link, resume, one job post).</li><li>Joane reviews everything against the job you want.</li><li>Your report or new profile text arrives by email.</li></ol>
+<div class="consulting-grid linkedin-cards">
+<article class="consulting-card" id="linkedin-audit"><h3>LinkedIn and Resume Audit</h3>
+<p class="linkedin-price"><span class="sr-only">Regular price </span><del>$79.99</del> <strong>$59.99</strong><span>Black Friday Special through Nov 30</span></p>
+<p class="consulting-sub">A written review of your LinkedIn and resume, matched to the job you actually want.</p>
+<h4>What you get</h4><ul class="consulting-deliverables"><li>A written audit report with exactly what to change</li><li>A fix list ranked by what to do first</li><li>A keyword check against your target job post</li><li>A suggested LinkedIn headline and 2 rewritten resume bullets</li></ul>
+<p class="linkedin-delivery"><strong>Delivery:</strong> within 3 business days by email</p>
+<a class="btn btn-primary" data-stan-service="audit" hidden="">Get My Audit for $59.99</a><p class="linkedin-opening">Opening soon</p>
+</article>
+<article class="consulting-card" id="linkedin-update"><h3>LinkedIn Profile Update</h3>
+<p class="linkedin-price"><strong>$99</strong></p>
+<p class="consulting-sub">I rewrite your LinkedIn so it matches your resume and the role you want.</p>
+<h4>What you get</h4><ul class="consulting-deliverables"><li>New headline and About section</li><li>Rewritten experience bullets</li><li>A matched skills list</li><li>Everything delivered as text you paste into LinkedIn yourself</li></ul>
+<p class="linkedin-delivery"><strong>Delivery:</strong> within 5 business days by email</p>
+<a class="btn btn-primary" data-stan-service="update" hidden="">Update My LinkedIn</a><p class="linkedin-opening">Opening soon</p>
+</article></div>
+<p class="offer-note linkedin-privacy">We never need your LinkedIn password, SSN or bank details.</p>
+<h3 class="linkedin-subheading">Who it's for</h3><p>Job seekers in any field, career changers, people returning to work, and anyone applying a lot and hearing nothing back.</p>
+<h3 class="linkedin-subheading">Your reviewer</h3><p>Joane Aristilde, IT degree, MBA, Technical Program Manager, PMP, CSM, CSPO and SAFe certified.</p>
+<p class="offer-note linkedin-testimonial">[REAL QUOTE NEEDED]</p>
+</div></section><section id="personal-help"><div class="container">
 <span class="section-label">Work with me one on one</span><h2 class="section-title">AI help for your next task.</h2>
 <p class="section-intro">Stuck on something specific? Ask about personal help with a job-search workflow, a website, or a document task. We’ll agree on one clear goal before the session.</p>
 <div class="consulting-grid"><article class="consulting-card featured"><h3>Personal AI help</h3>
